@@ -1,0 +1,25 @@
+{
+    "*://*.wikinvest.com/*": {
+        "name": "wikinvest",
+        "logout": {
+            "cookies": [
+                "__ait",
+                "__ajt",
+                "__ast",
+                "__ats",
+                "__au",
+                "__dli"
+            ]
+        },
+        "login": {
+            "urls": ["https://www.wikinvest.com/account/login"],
+            "formURL": "https://www.wikinvest.com/account/api/login?rt=aHR0cHM6Ly93d3cud2lraW52ZXN0LmNvbS9wb3J0Zm9saW8,",
+            "method": "POST",
+            "usernameField": "userName",
+            "passwordField": "password",
+            "hasHiddenInputs": false,
+            "check": "a:contains('Logout')"
+        }
+    }
+}
+
